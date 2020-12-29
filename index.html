@@ -8,6 +8,12 @@
 <html lang="en">
 	<head>
 		<title>Jonathan's Portfolio</title>
+		<link href="teststyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			header {
+				background-color: darkgray;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -16,16 +22,16 @@
 				<h1>Portfolio for Jonathan Winter</h1>
 			</header>
 			
-			<nav> <!-- The nav element will include the navigation buttons or links -->
-				<hr/>
+			<nav class="border"> <!-- The nav element will include the navigation buttons or links -->
+				<hr style="border: thin dotted red;" />
 					<p><a href="projects.html">Projects</a></p>
 					<p><a href="contact.html">Contact Information</a></p>
 					<p><a href="testimonials.html">Testimontials</a></p>
-				<hr/>
+				<hr style="width: 50%; border: 2px solid blueviolet;" />
 			</nav>
 
 			<section>
-				<article id ="about-me">
+				<article class="border" id ="about-me">
 					<h2><em>About Me</em></h2>
 					<a href="https://www.linkedin.com/in/jonathan-winter-9bb09471/" target="_blank"> <img src="images/portrait-resize.jpg" alt="Portrait of Jonathan Winter" style="width: 300px;" /> </a>
 					<p>My name is Jonathan Winter, and I am learning to become a C# Software Developer.  I originally went to college
@@ -106,7 +112,7 @@
 					</ul>	
 			</section>
 
-			<footer>
+			<footer style="background-color: fuchsia">
 				<hr/>
 				<p>&copy; 2020 Jonathan Winter.  All rights reserved. </p>
 			</footer>
