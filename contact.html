@@ -1,26 +1,80 @@
 <!DOCTYPE html>
-<!--
-	Name: Jonathan Winter
-	Date Created: 12/21/20
-	Most Recent Revision: 12/21/20
--->
+
+<!-- Name: Jonathan Winter -->
+<!-- Date Created: 12/21/20 -->
+<!-- Most Recent Revision: 01/25/21 -->
 
 <html lang="en">
-	
 	<head>
 		<title>Contact Information</title>
+		
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			label, fieldset{
+				font-size: 1.1em;
+			}
+			
+			input[type=text] {
+				border: 2px solid #F1EDEE;
+				width: 50%;
+				padding: 8px 8px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				font-size: 1.1em;
+			}
+			
+			fieldset {
+				background-color: #686963;
+				width: 100%;
+				padding: 12px 20px;
+				margin: 12px 0px;
+				box-sizing: border-box;
+				border: 2px solid #8AA29E;
+			}
+			
+			select, textarea {
+				margin: 12px 0;
+				font-size: 1em;
+			}	
+			
+			input[type=submit] {
+				font-size: 1.2em;
+				background-color: #3D5467;
+				color: #F1EDEE;
+				padding: 4px 8px;
+			}
+			
+			input[type=submit]:hover {
+				background-color: #8AA29E;
+				color: #3D5467;
+			}
+			
+			textarea {
+				width: 100%;
+				height: 200px;
+				padding: 12px 20px;
+				margin: 12px 0;
+				box-sizing: border-box;
+				border: 2px solid #F1EDEE;
+				border-radius: 3px;
+				background-color: #fff;
+				resize: none;
+			}
+		</style>
 	</head>
 	
 	<body>
 		<header>
-			<h1>Information to Contact Jonathan Winter</h1>
+			<h1>Contact Me</h1>
 		</header>
 		
-		<hr/>
-			<a href="index.html">Home</a>
-		<hr/>
+		<nav class="border">
+			<p><a href="index.html">Home</a></p>
+			<div class="clear-float"></div>
+		</nav>
 		
-		<section>
+		<body>
 			<h2>Information Request</h2>
 				<form action="submit.html" method="POST">
 				
@@ -67,11 +121,12 @@
 				<label for="info">Additional Information:</label><br/>
 				<textarea id="info" name="info"></textarea><br/>
 				
-				<input type="submit" name="submit" value="Submit">
+				<p><input type="submit" name="submit" value="Submit"></p>
 
-		</section>
+		</body>
 				
 		<footer>
+			<p>&copy; 2020 Jonathan Winter.  All rights reserved. </p>
 		</footer>
 	</body>
 </html>
